@@ -32,6 +32,8 @@ cd comorg-book-thai
 
 *(เปลี่ยน `ชื่อผู้สร้าง` เป็น username ของผู้สร้าง Repository)*
 
+**ผลลัพธ์ที่พึงได้:** จะได้โฟลเดอร์ `comorg-book-thai` ในเครื่อง พร้อมไฟล์และโฟลเดอร์ย่อย (README.md, chapter-1/, chapter-2/ ฯลฯ) ตามที่หัวหน้ากลุ่มอื่นส่งขึ้นไปแล้ว
+
 #### ขั้นที่ 3: สร้างโฟลเดอร์และไฟล์
 
 สร้างโฟลเดอร์ `chapter-X` (ตามบทที่กลุ่มรับผิดชอบ) และไฟล์ดังนี้:
@@ -68,6 +70,8 @@ git add .
 git commit -m "หัวหน้าสร้างโครงสร้างบทที่ 4"
 git push origin main
 ```
+
+**ผลลัพธ์ที่พึงได้:** บน GitHub หน้า Repository จะแสดงโฟลเดอร์ `chapter-4` มีไฟล์ `README.md` และลิงก์ใน `README.md` หลักสามารถคลิกไปยัง `chapter-4` ได้
 
 #### ขั้นที่ 5: เพิ่มสมาชิกในกลุ่มเป็น Collaborator
 
@@ -119,6 +123,8 @@ git clone https://github.com/ชื่อผู้สร้าง/comorg-book-th
 cd comorg-book-thai
 ```
 
+**ผลลัพธ์ที่พึงได้:** จะได้โฟลเดอร์ `comorg-book-thai` มีโครงสร้างโฟลเดอร์ตามที่หัวหน้าสร้างไว้ เช่น `README.md`, `chapter-4/`, `chapter-4/README.md` เป็นต้น
+
 ### ครั้งถัดไป: ดึงข้อมูลล่าสุด (Pull)
 
 เมื่อมีโปรเจกต์ในเครื่องแล้ว ทุกครั้งที่เริ่มงานให้ดึงข้อมูลล่าสุดก่อน:
@@ -127,6 +133,8 @@ cd comorg-book-thai
 git checkout main
 git pull origin main
 ```
+
+**ผลลัพธ์ที่พึงได้:** ไฟล์ในเครื่องจะอัปเดตเป็นเวอร์ชันล่าสุด เช่น ถ้าเพื่อน Merge งานใหม่เข้า `main` แล้ว ท่านจะได้ไฟล์นั้นมาในเครื่องด้วย
 
 ### ขั้นที่ 1: แตกสาขา (Branch)
 
@@ -149,12 +157,29 @@ git commit -m "เพิ่มหัวข้อ 4.1"
 git push -u origin section-4.1
 ```
 
+**ผลลัพธ์ที่พึงได้ (ตัวอย่าง):**
+
+```
+[section-4.1 abc1234] เพิ่มหัวข้อ 4.1
+ 1 file changed, 25 insertions(+)
+ create mode 100644 chapter-4/4-1.md
+...
+To https://github.com/.../comorg-book-thai.git
+ * [new branch]      section-4.1 -> section-4.1
+```
+
+จากนั้นบน GitHub จะแสดงปุ่ม **Compare & pull request** สำหรับสาขา `section-4.1`
+
 ### ขั้นที่ 4: ขอรวมไฟล์ (Pull Request)
 
 1. เข้าเว็บ GitHub ไปที่ Repository `comorg-book-thai`
 2. ระบบจะแสดงปุ่ม **Compare & pull request** (หรือไปที่แท็บ **Pull requests** แล้วกด **New pull request**)
 3. เลือกสาขาของตนเองเปรียบเทียบกับ `main` กด **Create pull request** พร้อมเขียนข้อความอธิบาย
 4. รอให้หัวหน้ากลุ่มตรวจสอบและกด **Merge pull request**
+
+**ผลลัพธ์ที่พึงได้ (ตัวอย่างสถานการณ์):**
+- หลังหัวหน้า Merge แล้ว เมื่อเข้า `chapter-4/README.md` บน GitHub ลิงก์ `[คลิกอ่าน 4.1](4-1.md)` จะเชื่อมไปยังไฟล์ `4-1.md` ที่ท่านสร้างได้
+- หน้าเว็บจะแสดงเนื้อหาที่ท่านเขียนอย่างสมบูรณ์
 
 ### ขั้นที่ 5: หลัง Merge แล้ว
 

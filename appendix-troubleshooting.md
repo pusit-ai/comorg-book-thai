@@ -73,6 +73,15 @@ git pull --rebase origin main
 git push
 ```
 
+**ผลลัพธ์ที่พึงได้เมื่อแก้ไขสำเร็จ (ตัวอย่าง):**
+
+```
+Successfully rebased and updated refs/heads/main.
+...
+To https://github.com/.../comorg-book-thai.git
+   abc1234..def5678  main -> main
+```
+
 ---
 
 ## กรณีที่ 4: เกิด Conflict (ข้อขัดแย้ง)
@@ -101,6 +110,8 @@ git push
 git add .
 git rebase --continue
 ```
+
+**ผลลัพธ์ที่พึงได้เมื่อแก้ conflict สำเร็จ:** ระบบจะแสดง `Successfully rebased and updated refs/heads/main` จากนั้นให้สั่ง `git push` เพื่อส่งงานขึ้นเว็บ
 
 ---
 

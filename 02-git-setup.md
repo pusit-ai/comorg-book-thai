@@ -61,7 +61,16 @@ git config --global user.email "somchai@email.com"
 git config --global --list
 ```
 
-ระบบจะแสดงค่าที่ตั้งไว้ทั้งหมด หากเห็น `user.name` และ `user.email` ตามที่กำหนด แสดงว่าตั้งค่าสำเร็จ
+**ผลลัพธ์ที่พึงได้ (ตัวอย่าง):**
+
+```
+user.name=สมชาย ใจดี
+user.email=somchai@email.com
+core.repositoryformatversion=0
+...
+```
+
+หากเห็น `user.name` และ `user.email` ตามที่กำหนด แสดงว่าตั้งค่าสำเร็จ
 
 ---
 
@@ -82,6 +91,19 @@ git config --global --list
 | :--- | :--- |
 | ดึงโปรเจกต์จาก GitHub ลงมา | `git clone https://github.com/username/repo-name.git` |
 | เริ่มโปรเจกต์ใหม่ในโฟลเดอร์ปัจจุบัน | `git init` |
+
+**ผลลัพธ์ที่พึงได้เมื่อ `git clone` สำเร็จ (ตัวอย่าง):**
+
+```
+Cloning into 'comorg-book-thai'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+Receiving objects: 100% (15/15), done.
+```
+
+หลัง clone เสร็จ จะมีโฟลเดอร์ชื่อเดียวกับ Repository อยู่ในตำแหน่งที่รันคำสั่ง
+
+---
 
 **กรณีสร้าง Repository บน GitHub แล้วมีโฟลเดอร์ในเครื่องอยู่แล้ว:** หลัง `git init` และสร้างไฟล์แล้ว ให้เชื่อมกับ GitHub ด้วยคำสั่ง:
 

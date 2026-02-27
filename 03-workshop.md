@@ -27,6 +27,10 @@ git commit -m "หัวหน้าสร้างโฟลเดอร์ memb
 git push origin main
 ```
 
+**ผลลัพธ์ที่พึงได้:**
+- บน GitHub: หน้า Repository จะเห็นโฟลเดอร์ `members` และไฟล์ภายใน
+- ในเครื่อง: โครงสร้างโฟลเดอร์จะเป็น `git-workshop-101/members/`
+
 ---
 
 ## หน้าที่ของลูกทีมทุกคน (รวมหัวหน้าด้วย)
@@ -60,6 +64,20 @@ git commit -m "ส่งป้ายชื่อของสมชาย"
 git push -u origin name-somchai
 ```
 
+**ผลลัพธ์ที่พึงได้ (ตัวอย่าง):**
+
+```
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: ...
+To https://github.com/ชื่อหัวหน้า/git-workshop-101.git
+ * [new branch]      name-somchai -> name-somchai
+```
+
+จากนั้นบน GitHub จะแสดงข้อความสีเหลืองว่า "name-somchai had recent pushes" พร้อมปุ่ม **Compare & pull request**
+
 ---
 
 ## การตรวจรับงาน (ทำบนเว็บ GitHub)
@@ -73,7 +91,19 @@ git checkout main
 git pull origin main
 ```
 
-เมื่อเปิดโฟลเดอร์ `members` ดู จะพบไฟล์ของสมาชิกทุกคนมารวมกันอย่างสมบูรณ์
+**ผลลัพธ์ที่พึงได้:**
+
+เมื่อเปิดโฟลเดอร์ `members` ดู โครงสร้างจะประมาณนี้:
+
+```
+git-workshop-101/
+└── members/
+    ├── somchai.md      ← ไฟล์ของสมชาย
+    ├── wichai.md       ← ไฟล์ของวิชัย
+    └── srisuda.md      ← ไฟล์ของศรีสุดา
+```
+
+ไฟล์ของสมาชิกทุกคนมารวมกันในโฟลเดอร์เดียวกัน แสดงว่าทำงานร่วมกันสำเร็จ
 
 ---
 
