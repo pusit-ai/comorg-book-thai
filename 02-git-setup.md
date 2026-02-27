@@ -13,6 +13,17 @@
 
 ---
 
+## ขั้นตอนที่ 0: สร้างบัญชี GitHub (ถ้ายังไม่มี)
+
+1. ไปที่ [github.com](https://github.com)
+2. กด **Sign up** สมัครสมาชิก (บริการพื้นฐานฟรี)
+3. กรอกอีเมล ชื่อผู้ใช้ และรหัสผ่าน
+4. ยืนยันอีเมลตามที่ระบบส่งมา
+
+**สำคัญ:** ควรใช้อีเมลที่ตรวจสอบได้บ่อย เพราะจะใช้สำหรับรับคำเชิญเข้าร่วมโครงงานและยืนยันตัวตน
+
+---
+
 ## ขั้นตอนที่ 1: ติดตั้ง Git
 
 1. ไปที่ [git-scm.com/downloads](https://git-scm.com/downloads)
@@ -69,8 +80,18 @@ git config --global --list
 
 | การกระทำ | คำสั่ง |
 | :--- | :--- |
-| เริ่มโปรเจกต์ใหม่ในโฟลเดอร์ปัจจุบัน | `git init` |
 | ดึงโปรเจกต์จาก GitHub ลงมา | `git clone https://github.com/username/repo-name.git` |
+| เริ่มโปรเจกต์ใหม่ในโฟลเดอร์ปัจจุบัน | `git init` |
+
+**กรณีสร้าง Repository บน GitHub แล้วมีโฟลเดอร์ในเครื่องอยู่แล้ว:** หลัง `git init` และสร้างไฟล์แล้ว ให้เชื่อมกับ GitHub ด้วยคำสั่ง:
+
+```bash
+git remote add origin https://github.com/username/repo-name.git
+git branch -M main
+git add .
+git commit -m "เนื้อหาเริ่มต้น"
+git push -u origin main
+```
 
 ---
 

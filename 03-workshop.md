@@ -14,9 +14,9 @@
 
 ## หน้าที่ของหัวหน้ากลุ่ม
 
-1. เข้าเว็บ [GitHub](https://github.com) สร้าง Repository ใหม่ชื่อ `git-workshop-101`
-2. ไปที่ **Settings** > **Collaborators** ใส่อีเมลเชิญสมาชิกในกลุ่ม
-3. สร้างโครงสร้างเริ่มต้นและส่งขึ้นเว็บดังนี้:
+1. เข้าเว็บ [GitHub](https://github.com) กด **New** สร้าง Repository ใหม่ชื่อ `git-workshop-101` (ไม่ต้องติ๊ก "Add a README file")
+2. ไปที่ **Settings** > **Collaborators** ใส่อีเมล GitHub ของสมาชิกในกลุ่มแล้วส่งคำเชิญ
+3. เปิด Command Prompt หรือ Terminal สร้างโครงสร้างเริ่มต้นและส่งขึ้นเว็บดังนี้:
 
 ```bash
 git clone https://github.com/ชื่อหัวหน้า/git-workshop-101.git
