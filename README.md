@@ -26,7 +26,7 @@
 
 | หัวข้อ | คำอธิบาย |
 | :--- | :--- |
-| [แก้ปัญหาที่พบบ่อย](appendix-troubleshooting.md) | Push ไม่ได้, Conflict, และแนวทางแก้ไข |
+| [แก้ปัญหาที่พบบ่อย](appendix-troubleshooting.md) | กรณีที่ 1–7: Push ไม่ได้, Repository not found, Conflict, SSH key และแนวทางแก้ไข |
 | [การจัดการ Line Ending](appendix-gitattributes.md) | ป้องกันปัญหา CRLF/LF |
 
 ---
