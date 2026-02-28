@@ -28,6 +28,7 @@
 | :--- | :--- |
 | [แก้ปัญหาที่พบบ่อย](appendix-troubleshooting.md) | กรณีที่ 1–7: Push ไม่ได้, Repository not found, Conflict, SSH key และแนวทางแก้ไข |
 | [การจัดการ Line Ending](appendix-gitattributes.md) | ป้องกันปัญหา CRLF/LF |
+| [การใช้ GitHub Desktop](appendix-github-desktop.md) | ขั้นตอนการใช้งานแบบ GUI สำหรับผู้เริ่มต้น |
 
 ---
 
