@@ -1,8 +1,4 @@
 # บทที่ 8: การสนับสนุนระบบปฏิบัติการ (Operating System Support)
-
-> **ที่มา:** Computer Organization and Architecture, Chapter 8  
-> **ภาษา:** ภาษาไทย (แปลจากต้นฉบับภาษาอังกฤษ)
-
 ---
 
 ## สารบัญ
