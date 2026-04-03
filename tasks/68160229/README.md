@@ -7,4 +7,4 @@
 | 8.3 | 68160276 นายสิปปวิชญ์ ยวงเอี่ยมใย | [คลิกอ่าน 8.3](chapter%208/8.3Memory%20Management%20.md) |
 | 8.4 | 68160231 นายชัยนันท์ อรุณวัฒน์ | [คลิกอ่าน 8.4](chapter%208/8.4%20Intel%20x86%20Memory%20Management.md) |
 | 8.5 | 68160229 นางสาวจิรนันท์ หนูสุข | [คลิกอ่าน 8.5](chapter%208/8.5%20Arm%20Memory%20Management.md) |
-| 8.6 | 68160095 นายอรรถพล ยอดพรหม | [คลิกอ่าน 8.6](chapter%208/8.6Key%20Terms,%20Review%20Questions,%20and%20Problems.md) |
+| 8.6 | 68160095 นายอรรถพล ลีวงศ์วัฒน์ | [คลิกอ่าน 8.6](chapter%208/8.6Key%20Terms,%20Review%20Questions,%20and%20Problems.md) |
